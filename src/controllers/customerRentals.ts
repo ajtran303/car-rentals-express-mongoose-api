@@ -3,7 +3,7 @@ import ReqRes from "../utils/interfaces/ReqRes"
 
 // CREATE
 
-export const postRental: ReqRes = async (req, res) => {
+export const postRental: ReqRes = async (req: any, res: any) => {
   try {
     const customerId = req.params.customerId
     const { carId, pickupTime, returnTime, price } = req.body
