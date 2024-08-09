@@ -23,6 +23,14 @@ export const postRental: ReqRes = async (req: any, res: any) => {
 
 // READ
 
+export const getRental: ReqRes = async (req, res) => {
+  try {
+
+  } catch (err) {
+    res.status(404).send("Rental Not Found")
+  }
+}
+
 // READ ALL
 
 // UPDATE
